@@ -17,7 +17,7 @@ mongoose.connect(process.env.DB_URL, {useNewUrlParser:true,useUnifiedTopology: t
 
 //setting
 
-//app.set('port',process.env.PORT || 3000);
+    app.set('port',process.env.PORT || 3000);
 
     //crear servidor  y escuchar peticiones http
     app.listen(port,host,()=> {
