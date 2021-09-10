@@ -21,14 +21,14 @@ mongoose.connect(process.env.DB_URL, {useNewUrlParser:true,useUnifiedTopology: t
 
     //crear servidor  y escuchar peticiones http
     app.listen(port,host,()=> {
-        console.log('servidor corriendo en el puerto 3000');
+        console.log('servidor corriendo en el puerto 5000');
     });
 
 
 });
 //leer localhost de variables y puerto
 const host = process.env.HOST || '0.0.0.0';
-const port = process.env.PORT ||  3000;
+const port = process.env.PORT ||  5000;
 
 //static files
 app.use(express.static('dist')); 
