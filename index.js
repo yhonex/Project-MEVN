@@ -17,7 +17,7 @@ mongoose.connect(process.env.DB_URL, {useNewUrlParser:true,useUnifiedTopology: t
 
 //setting
 
-    app.set('port',process.env.PORT || 3000);
+  //  app.set('port',process.env.PORT || 3000);
 
     //crear servidor  y escuchar peticiones http
     app.listen(port,host,()=> {
@@ -31,4 +31,4 @@ const host = process.env.HOST || '0.0.0.0';
 const port = process.env.PORT ||  3000;
 
 //static files
-app.use(express.static(__dirname+'/dist')); 
+app.use(express.static('dist')); 
